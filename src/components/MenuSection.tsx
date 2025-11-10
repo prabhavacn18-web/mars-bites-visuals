@@ -41,7 +41,7 @@ const menuItems = [
 
 export const MenuSection = () => {
   return (
-    <section className="py-20 bg-gradient-space">
+    <section id="menu" className="py-20 bg-gradient-space">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
