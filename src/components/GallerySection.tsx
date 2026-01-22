@@ -323,13 +323,17 @@ export const GallerySection = () => {
             </motion.div>
           ))}
           
-          {/* Visit Us CTA Card */}
-          <motion.div
-            className="h-48 md:h-64 relative overflow-hidden rounded-xl bg-gradient-mars flex items-center justify-center cursor-pointer group"
+          {/* Visit Us CTA Card - Opens in new tab */}
+          <motion.a
+            href="/visit-us"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="h-48 md:h-64 relative overflow-hidden rounded-xl bg-gradient-mars flex items-center justify-center cursor-pointer group block"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.9, duration: 0.5 }}
             whileHover={{ scale: 1.02 }}
+            aria-label="Visit Us - Opens in a new tab"
           >
             <motion.div
               className="text-center p-6 z-10"
@@ -380,7 +384,7 @@ export const GallerySection = () => {
                 />
               ))}
             </div>
-          </motion.div>
+          </motion.a>
         </motion.div>
 
         {/* Mobile Swipe Gallery - Hidden on desktop */}
